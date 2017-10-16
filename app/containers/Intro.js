@@ -14,7 +14,7 @@ class Intro extends Component {
 
   _onClicked(e) {
     e.preventDefault()
-    let checked = this.state
+    let { checked } = this.state
     this.setState({
       checked: !checked
     })
@@ -45,6 +45,10 @@ class Intro extends Component {
 
 Intro.defaultProps = {
   title: 'Checkbox'
+}
+
+Intro.propTypes = {
+  title: React.PropTypes.string
 }
 
 function mapStateToProps() {
