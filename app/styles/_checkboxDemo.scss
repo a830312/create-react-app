@@ -1,0 +1,17 @@
+.checkbox-demo {
+  .checkbox {
+    height: $text-height;
+    width: $text-height;
+    display: inline-block;
+    border: 1px solid $black;
+    vertical-align: middle;
+    &.checked {
+      background-color: $black;
+    }
+  }
+  .label {
+    vertical-align: middle;
+    padding-left: $checkbox-padding;
+    cursor: pointer;
+  }
+}

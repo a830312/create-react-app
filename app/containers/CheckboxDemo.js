@@ -3,13 +3,13 @@ import { connect } from 'react-redux'
 import Helmet from 'react-helmet'
 import Checkbox from 'components/Checkbox'
 
-class Intro extends Component {
+class CheckboxDemo extends Component {
   
 
   render() {
 
     return (
-      <div className="intro">
+      <div className="checkbox-demo">
         <Helmet
           title="Checkbox Demo"
         />
@@ -21,11 +21,11 @@ class Intro extends Component {
   }
 }
 
-Intro.defaultProps = {
+CheckboxDemo.defaultProps = {
   title: 'Checkbox'
 }
 
-Intro.propTypes = {
+CheckboxDemo.propTypes = {
   title: React.PropTypes.string
 }
 
@@ -33,4 +33,4 @@ function mapStateToProps() {
   return {}
 }
 
-export default connect(mapStateToProps)(Intro)
+export default connect(mapStateToProps)(CheckboxDemo)
